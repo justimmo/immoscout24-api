@@ -320,7 +320,7 @@ class Immocaster_Data_Mysql
      */
 	public function getApplicationToken($sUser)
 	{
-		$sql = "SELECT * FROM `".$this->_oDatabaseDb."`.`".$this->_sTableName."` WHERE ic_desc='REQUEST' AND ic_username='".$sUser."'";
+		$sql = "SELECT * FROM `".$this->_oDatabaseDb."`.`".$this->_sTableName."` WHERE ic_desc='APPLICATION' AND ic_username='".$sUser."'";
 		$result = mysqli_query($this->_oDataConnection,$sql);
 		if($obj = mysqli_fetch_object($result))
 		{

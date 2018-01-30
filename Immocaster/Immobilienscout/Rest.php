@@ -52,7 +52,7 @@ class Immocaster_Immobilienscout_Rest extends Immocaster_Immobilienscout
 	 /**
 	 * Requests standardmäßig mit http abgeschickt
 	 */
-	 protected $_sProtocol = 'http';
+	 protected $_sProtocol = 'https';
 
      /**
       * Proxy
